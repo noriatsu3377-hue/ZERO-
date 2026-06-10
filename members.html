@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="零 -ZERO- MEMBERS | 身体を学び、現場で確かな結果を出すための本質的な会員制コミュニティ。月額2,980円で症例相談、勉強会、アーカイブ見放題。">
+    <title>零 -ZERO- MEMBERS | 身体の本質を学び 結果を出せる人へ</title>
+    
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Subpage Custom Styles -->
+    <style>
+        /* FAQ Section Specifics */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid #1a1a1a;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+        }
+        .faq-item:hover {
+            border-color: rgba(197, 168, 128, 0.3);
+            background-color: var(--bg-card-hover);
+        }
+        .faq-question {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: var(--gold-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .faq-question-icon {
+            font-family: var(--font-eng);
+            font-weight: 600;
+            color: var(--gold-primary);
+        }
+        .faq-answer {
+            font-size: 1rem;
+            color: var(--text-sub);
+            line-height: 1.8;
+            padding-left: 2rem;
+        }
+
+        /* Onboarding Flow Specifics */
+        .flow-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+        .flow-step {
+            background: var(--bg-card);
+            border: 1px solid #1a1a1a;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+        .flow-step:hover {
+            border-color: rgba(197, 168, 128, 0.3);
+            transform: translateY(-4px);
+        }
+        .flow-step-num {
+            font-family: var(--font-eng);
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--gold-primary);
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+            display: block;
+            line-height: 1;
+        }
+        .flow-step-title {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+        .flow-step-desc {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        /* Hero details adjustments */
+        .members-hero {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at center, #111111 0%, #000000 100%);
+            border-bottom: 1px solid #111;
+        }
+
+        /* Responsive fixes for subpage */
+        @media (max-width: 768px) {
+            .flow-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .faq-answer {
+                padding-left: 0;
+            }
+            .members-hero {
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         HEADER
+         ========================================================================== -->
+    <header style="position: absolute; top: 0; left: 0; width: 100%; z-index: 10; padding: 2rem 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" style="display: flex; align-items: center;">
+                <img src="./S__96075780.jpg" alt="零 -ZERO-" class="logo-img">
+            </a>
+            <div>
+                <a href="index.html" class="btn-outline" style="padding: 0.6rem 1.5rem; font-size: 0.9rem; border-width: 1px;">トップページに戻る</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="members-hero">
+        <div class="grid-accent"></div>
+        <div class="container">
+            <div class="community-header reveal">
+                <div style="margin-bottom: 1.5rem;">
+                    <img src="./S__96075780.jpg" alt="零 -ZERO-" class="logo-img-large">
+                </div>
+                <h1 style="font-size: 3rem; font-weight: 300; line-height: 1.4; letter-spacing: 0.15em; margin-bottom: 1.5rem; margin-top: -1rem;">
+                    MEMBERS
+                </h1>
+                <p class="community-sub-title" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2.5rem auto; line-height: 2;">
+                    知識を集める人ではなく、現場で「結果を出せる人」になる。<br>
+                    身体の本質を理解し、仲間と共に学び続けるための特別な場所。
+                </p>
+                
+                <div class="members-price-box" style="margin-bottom: 2.5rem;">
+                    <span class="members-price-label">月額</span>
+                    <span class="members-price-value" style="font-size: 4.5rem; color: var(--text-main);">2,980</span>
+                    <span class="members-price-period">円 (税込)</span>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://web.online.airpayment.jp/payment?planId=PL9agPQKnJG0fx8stl" class="btn-gold" style="padding: 1.4rem 4rem;">月額決済でお申し込み</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHILOSOPHY INTRO
+         ========================================================================== -->
+    <section class="section-deep" style="border-bottom: 1px solid #111;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
+                <h2 style="font-size: 1.8rem; margin-bottom: 3rem;">なぜ今、このコミュニティが必要なのか？</h2>
+                <p style="font-size: 1.1rem; line-height: 2.2; text-align: justify; text-justify: inter-character; margin-bottom: 2rem;">
+                    世の中には数多くのテクニック、新しいメソッドが溢れています。しかし、どれほど高度な技術を学んでも、「なぜその結果になったのか」という本質的な身体の評価ができなければ、現場での再現性は生まれません。
+                </p>
+                <p style="font-size: 1.1rem; line-height: 2.2; text-align: justify; text-justify: inter-character; margin-bottom: 2rem;">
+                    零 -ZERO- MEMBERS は、解剖学・生理学・神経学・東洋医学といった揺るぎない基礎に基づき、<strong>「目の前のクライアントにどうアプローチすべきか」</strong>を論理的に導き出せる力を養う場です。
+                </p>
+                <p style="font-size: 1.1rem; line-height: 2.2; text-align: justify; text-justify: inter-character; color: var(--gold-primary); font-family: var(--font-serif); margin-top: 3rem; margin-bottom: 3rem;">
+                    「ただの知識コレクター」から卒業し、「本当に結果を出せる指導者・施術者」へ。
+                </p>
+                
+                <div style="background: var(--bg-card); border: 1px solid #1a1a1a; padding: 2.5rem; margin: 3rem auto 0 auto; max-width: 700px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" class="reveal">
+                    <p style="font-size: 0.95rem; color: var(--text-sub); margin-bottom: 1.5rem; line-height: 1.8;">
+                        統合型コンディショニングブランド「零 -ZERO-」の<br>
+                        システム概要・ブランド理念は公式サイトでもご覧いただけます。
+                    </p>
+                    <a href="https://noriatsu3377-hue.github.io/ZERO/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding: 0.8rem 2.5rem; font-size: 0.95rem; border-width: 1px;">
+                        零 -ZERO- ブランド公式サイトを見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENEFITS DETAILS SECTION
+         ========================================================================== -->
+    <section class="section-dark" style="border-bottom: 1px solid #111;">
+        <div class="container">
+            <div class="community-header reveal">
+                <div class="community-section-label">BENEFITS</div>
+                <h2>会員限定の6大特典</h2>
+                <p class="community-sub-title">月額2,980円で受けられるすべての体験</p>
+            </div>
+
+            <div class="members-grid">
+                <!-- Benefit 1 -->
+                <div class="member-benefit-card reveal">
+                    <span class="member-benefit-num">01</span>
+                    <h4 class="member-benefit-title">月1回 症例相談＆オンライン勉強会</h4>
+                    <p class="member-benefit-desc">
+                        毎月Zoomにてオンライン勉強会を開催。実際の現場で遭遇した症例をもとに、どのような評価を行い、どのようなアプローチが最適かを原口が直接解説。あなたの臨床・指導の疑問もその場で相談可能です。
+                    </p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="member-benefit-card reveal reveal-delay-1">
+                    <span class="member-benefit-num">02</span>
+                    <h4 class="member-benefit-title">会員限定プレミアムコンテンツ</h4>
+                    <p class="member-benefit-desc">
+                        解剖学、生理学、神経学、東洋医学、評価法、運動指導、コンディショニングなど、現場で即座に役立つ専門的な解説記事や実技解説動画をメンバーページにて随時更新していきます。
+                    </p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="member-benefit-card reveal">
+                    <span class="member-benefit-num">03</span>
+                    <h4 class="member-benefit-title">過去講義のアーカイブ見放題</h4>
+                    <p class="member-benefit-desc">
+                        仕事や私生活の都合で勉強会にリアルタイム参加できない場合も安心です。すべての講義や勉強会は録画され、メンバー専用ポータルからいつでも、何度でも見返して学習することができます。
+                    </p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="member-benefit-card reveal reveal-delay-1">
+                    <span class="member-benefit-num">04</span>
+                    <h4 class="member-benefit-title">いつでも相談できる質問・相談窓口</h4>
+                    <p class="member-benefit-desc">
+                        日々の施術や指導の中で生じた疑問、クライアントへの対応に迷った際、会員限定のクローズドなコミュニティ（Slack等）の相談窓口からいつでも直接相談や質問ができます。
+                    </p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="member-benefit-card reveal">
+                    <span class="member-benefit-num">05</span>
+                    <h4 class="member-benefit-title">リアル実技セミナーの会員限定優待</h4>
+                    <p class="member-benefit-desc">
+                        Founder原口慶篤が主宰する各種リアルワークショップ、経絡ストレッチ、アプローチ合宿などの受講費用が、メンバー限定の特別割引価格（一般価格より数千円〜数万円お得）になります。
+                    </p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="member-benefit-card reveal reveal-delay-1">
+                    <span class="member-benefit-num">06</span>
+                    <h4 class="member-benefit-title">少人数制イベント・合宿の最優先案内</h4>
+                    <p class="member-benefit-desc">
+                        少人数に限定して行われるクローズドな実技研修や合宿、また特別ゲストを招いたイベント等に、一般募集の前にメンバー先行枠として最優先でご案内いたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         ONBOARDING FLOW
+         ========================================================================== -->
+    <section class="section-deep" style="border-bottom: 1px solid #111;">
+        <div class="container">
+            <div class="community-header reveal">
+                <div class="community-section-label">FLOW</div>
+                <h2>ご入会の流れ</h2>
+                <p class="community-sub-title">お申し込みからコミュニティ参加まで</p>
+            </div>
+
+            <div class="flow-container reveal">
+                <!-- Step 1 -->
+                <div class="flow-step">
+                    <span class="flow-step-num">01</span>
+                    <h3 class="flow-step-title">月額決済の登録</h3>
+                    <p class="flow-step-desc">
+                        「月額決済でお申し込み」ボタンより、AirPAYオンライン決済システムにてクレジットカード情報をご登録ください。
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flow-step">
+                    <span class="flow-step-num">02</span>
+                    <h3 class="flow-step-title">ご案内メールの送付</h3>
+                    <p class="flow-step-desc">
+                        決済完了後、ご登録いただいたメールアドレス宛に、会員限定コミュニティ（Slack等）への招待URLとご案内をお送りします。
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flow-step">
+                    <span class="flow-step-num">03</span>
+                    <h3 class="flow-step-title">コミュニティへ参加</h3>
+                    <p class="flow-step-desc">
+                        招待リンクからコミュニティにログイン。すぐにすべてのコンテンツ、動画アーカイブ、質問窓口をご利用いただけます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ SECTION
+         ========================================================================== -->
+    <section class="section-dark" style="border-bottom: 1px solid #111;">
+        <div class="container">
+            <div class="community-header reveal">
+                <div class="community-section-label">FAQ</div>
+                <h2>よくある質問</h2>
+                <p class="community-sub-title">疑問点を解消する</p>
+            </div>
+
+            <div class="faq-container reveal">
+                <!-- Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-question-icon">Q.</span>
+                        <span>どのような職種の方が参加していますか？</span>
+                    </div>
+                    <div class="faq-answer">
+                        パーソナルトレーナー、整体師、理学療法士、柔道整復師、鍼灸師、ヨガやピラティスのインストラクターなど、プロとして活動されている方をメインに、これからセラピストを目指す方や、身体の本質に深く興味がある一般の方まで幅広く在籍しています。
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-question-icon">Q.</span>
+                        <span>解剖学や生理学の知識が浅くてもついていけますか？</span>
+                    </div>
+                    <div class="faq-answer">
+                        はい、全く問題ありません。コミュニティでは、難解な専門用語を羅列するのではなく、「現場でどう応用するか」に焦点を当てて分かりやすく解説します。基礎知識に関する動画や記事も揃っており、自分のペースでいつでも学び直せます。
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-question-icon">Q.</span>
+                        <span>月額費用以外の追加費用は発生しますか？</span>
+                    </div>
+                    <div class="faq-answer">
+                        コミュニティ内のすべての勉強会やアーカイブ視聴、相談窓口の利用は月額2,980円（税込）に含まれています。ただし、現地で開催されるリアルセミナーや合宿の実費等に参加される場合のみ、別途（会員限定の優待価格にて）費用が発生いたします。
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-question-icon">Q.</span>
+                        <span>最低継続期間はありますか？解約はすぐにできますか？</span>
+                    </div>
+                    <div class="faq-answer">
+                        契約期間の縛りは一切ございません。解約を希望される場合は、会員マイページよりいつでもオンラインで解約申請を行うことができ、翌月からの決済を停止することができます。
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="faq-question-icon">Q.</span>
+                        <span>勉強会はリアルタイムで参加できないと意味がありませんか？</span>
+                    </div>
+                    <div class="faq-answer">
+                        いいえ、すべての勉強会や相談会は高画質なアーカイブ動画として数日以内にメンバー専用ポータルにアップロードされます。チャットでの質問もいつでも受け付けているため、後からアーカイブで学習し、気になった点をチャットで相談する形で問題なく学んでいただけます。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         CLOSING & FINAL CTA
+         ========================================================================== -->
+    <section class="section-deep">
+        <div class="grid-accent"></div>
+        <div class="container" style="text-align: center;">
+            <div class="closing-box reveal" style="border: none; background: transparent; padding: 0;">
+                <div class="closing-message">
+                    <span>小手先のメソッドに頼る日々は終わりにしよう。</span>
+                    <span>基礎を極め、自信を持って人を良くする「零」の領域へ。</span>
+                    <span style="font-size: 2.2rem; color: var(--gold-primary); font-family: var(--font-serif); margin-top: 2rem; display: block;">共に学ぶ仲間が、あなたを待っています。</span>
+                </div>
+
+                <div class="members-price-box" style="margin-bottom: 3rem; justify-content: center;">
+                    <span class="members-price-label">月額</span>
+                    <span class="members-price-value" style="font-size: 4.5rem; color: var(--text-main);">2,980</span>
+                    <span class="members-price-period">円 (税込)</span>
+                </div>
+                
+                <div class="closing-cta-group reveal reveal-delay-1" style="flex-direction: column; align-items: center; gap: 1rem;">
+                    <a href="https://web.online.airpayment.jp/payment?planId=PL9agPQKnJG0fx8stl" class="btn-gold" style="padding: 1.4rem 5rem;">月額決済でお申し込み</a>
+                    <a href="index.html" class="btn-outline" style="margin-top: 1.5rem; width: 100%; max-width: 320px;">トップページに戻る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo" style="margin-bottom: 1.5rem;">
+                <img src="./S__96075780.jpg" alt="零 -ZERO-" style="height: 50px; width: auto; object-fit: contain;">
+            </div>
+            <div class="footer-copyright">
+                &copy; ZERO. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link Interaction Script -->
+    <script src="script.js"></script>
+</body>
+</html>
